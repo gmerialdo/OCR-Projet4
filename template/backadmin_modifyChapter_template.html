@@ -1,0 +1,30 @@
+ <div id="page-wrapper">
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-head-line">MODIFIER LE CHAPITRE {{ post_nb }}</h1>
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div id="new_chapter">
+                    <form method="post" action="{{ path }}/admin/modifyChapter/{{ post_id }}">
+                    <p><em>Titre actuel: {{ post_title }}</em></p>
+                    <label>Changer le titre:</label>
+                    <input type="text" name="new_title" class="form-control" placeholder="Titre" />  
+                    <label>Modifier le contenu du chapitre:</label>
+                    <textarea id="mytextarea" name="new_content" rows="8">{{ post_content }}</textarea>
+                    <br/>
+                    <button type="submit" class="btn btn-success">Modifier</button>
+                    <a href="{{ path }}/admin/deleteChapter/{{ post_id }}" style="color: black;">Supprimer le chapitre</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--/.ROW-->
+    </div>
+    <!-- /. PAGE INNER  -->
+</div>
+<!-- /. PAGE WRAPPER  -->

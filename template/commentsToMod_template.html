@@ -1,0 +1,7 @@
+<tr class="row_table">
+    <td>n°{{ comment_id }}</td>
+    <td>{{ author }} <br/><em>{{ comment_date }}</em></td>
+    <td>{{ comment }}</td>
+    <td><a href="{{ path }}/postPage/{{ idPost }}">voir chapitre</a></td>
+    <td><a href="{{ path }}/admin/acceptComment/{{ comment_id }}">accepter</a> / <a href="{{ path }}/admin/refuseComment/{{ comment_id }}">refuser</a></td>
+</tr>

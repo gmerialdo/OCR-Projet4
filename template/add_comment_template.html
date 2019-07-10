@@ -1,0 +1,16 @@
+<h2>Laisser un commentaire</h2>
+<form action="{{ path }}/addCommentPage/{{ idPost }}" method="post">
+    <div class="one_third first">
+        <label for="name">Nom <span>*</span></label>
+        <input type="text" name="author" id="author" value="" size="22" required>
+    </div>
+    <div class="block clear">
+        <label for="comment">Votre commentaire:</label>
+        <textarea name="comment" id="comment" cols="25" rows="10"></textarea>
+    </div>
+    <div>
+        <input type="submit" name="submit" value="Envoyer">
+        &nbsp;
+        <input type="reset" name="reset" value="Effacer">
+    </div>
+</form>

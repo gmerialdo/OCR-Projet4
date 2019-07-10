@@ -1,0 +1,64 @@
+ <div id="page-wrapper">
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-head-line">TABLEAU DE BORD</h1>
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        Commentaires à modérer:
+                    </div>
+                    <div class="panel-body table-responsive">
+                        <table class="table">
+                        {{ content_commentsToMod }}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- /. ROW  -->
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div id="new_chapter">
+                    <h4>Ajouter un nouveau chapitre:</h4>
+                    <form method="post" action="{{ path }}/admin/addChapterPage">
+                    <label>Titre:</label>
+                    <input type="text" name="title" class="form-control" required="required" placeholder="Titre" />  
+                    <label>Contenu du chapitre:</label>
+                    <textarea id="mytextarea" name="content" rows="8"></textarea>
+                    <br/>
+                    <button type="submit" class="btn btn-success">Publier</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--/.ROW-->
+
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        Dernier chapitre publié: Chapitre {{ feat_post_nb }} - {{ feat_post_title }}
+                    </div>
+                    <div class="panel-body">
+	                    <p>{{ feat_post_content }}</p>
+                        <em>publié le {{ feat_post_date }}</em>
+                        <a href="{{ path }}/admin/modifyChapter/{{ feat_post_id }}">Modifier le chapitre</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- /. ROW  -->
+
+    </div>
+    <!-- /. PAGE INNER  -->
+</div>
+<!-- /. PAGE WRAPPER  -->

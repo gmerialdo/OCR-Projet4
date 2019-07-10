@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Template Name: Boguco
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link href="{{ path }}/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+        <title>{{ pageTitle }}</title>
+    </head>
+
+
+    <body id="top">
+
+        <div class="wrapper row0">
+            <div id="topbar" class="hoc clear"> 
+                <div class="fl_left">
+                    <ul class="nospace">
+                        <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+                        <li><i class="fa fa-envelope-o"></i> jean@forteroche.com</li>
+                    </ul>
+                </div>
+                <div class="fl_right">
+                    <ul class="nospace">
+                        <li><a href="{{ path }}/"><i class="fa fa-lg fa-home"></i>Accueil</a></li>
+                        <li><a href="{{ path }}/allPostsPage">Chapitres</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Background Image Wrapper -->
+        <div class="bgded overlay" style="background-image:url('{{ path }}/images/alaska2.jpg');"> 
+            <div class="wrapper row1">
+                <header id="header" class="hoc clear"> 
+                    <div id="logo" class="fl_left">
+                        <br/><h1>Billet simple pour l'Alaska</h1><br/>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <div class="wrapper row3">
+            <main class="hoc container clear"> 
+
+                <div class="sidebar one_quarter first"> 
+                  <h6>A propos</h6>
+                    <img src="{{ path }}/images/writer.jpg" alt="écrivain" />
+                    <p><em>Acteur et écrivain, j'ai toujours eu un goût pour l'innovation et la création et j'ai toujours tenu à évoluer avec mon temps. Vous découvrirez donc mon nouveau roman "Billet simple pour l'Alaska" chapitre après chapitre à travers ce blog... J'attends vos commentaires!</em></p>
+                    <p><em><strong>Jean Forteroche</strong></em></p>
+                </div>
+
+                <div class="content three_quarter">
+                    {{ content }}   
+                </div>
+
+            </main>
+        </div>
+
+        <!-- Footer Background Image Wrapper -->
+        <div class="bgded overlay" style="background-color: #20a2c5;');"> 
+            <div class="wrapper row5">
+                <div id="copyright" class="hoc clear"> 
+                    <p><a href="{{ path }}/admin/">- Espace administrateur - </a></p>
+                    <p class="fl_left">Copyright &copy; 2019 - Jean Forteroche - All Rights Reserved </p>
+                    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

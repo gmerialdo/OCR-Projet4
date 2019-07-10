@@ -1,0 +1,44 @@
+<div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{{ path }}/">BILLET SIMPLE POUR L'ALASKA</a>
+            </div>
+            <div class="header-right">
+                <a href="{{ path }}/admin/logout" class="btn btn-danger" title="Logout">Log out  <i class="fa fa-sign-out fa-2x"></i></a>
+            </div>
+        </nav>
+        <!-- /. NAV TOP  -->
+      
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <div class="user-img-div" style="background-image:url('{{ path }}/images/alaska2.jpg');">
+                        </div>
+                    </li>
+                    <li>
+                        <a class="active-menu" href="{{ path }}/admin/#page-wrapper"><i class="fa fa-dashboard "></i>Tableau de bord</a>
+                    </li> 
+                    <li>
+                        <a href="{{ path }}/admin/allChaptersPage#page-wrapper"><i class="fa fa-angle-right "></i>Tous les chapitres</a>    
+                    </li>
+                    <li>
+                        <a href="{{ path }}/admin/allCommentsPage#page-wrapper"><i class="fa fa-angle-right"></i>Tous les commentaires</a>    
+                    </li>
+                    <li>
+                        <a href="mailto:merialdo.gaelle@gmail.com"><i class="fa fa-angle-right "></i>Signaler un problème</a>    
+                    </li>
+                    <br/>
+                    <li>
+                        <a href="{{ path }}/"><i class="fa fa-home "></i>Voir le site</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+    
+    {{ content_admin_page }}
+       
+</div>
+<!-- /. WRAPPER  -->

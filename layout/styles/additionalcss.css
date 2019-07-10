@@ -1,0 +1,75 @@
+
+/* ------ Header ------*/
+
+div.bgded{
+    min-height: 20vh;
+}
+
+
+div#logo{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-style: italic;
+    background-color: #20a2c5;
+    border-radius: 50px;
+    text-align: center;
+     align-self: center;
+}
+
+
+
+nav.header_menu{
+    align-self: center;
+}
+
+a.header_menu_elt{
+    color: #20a2c5;
+    background-color: white; 
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 1.6rem; 
+    text-decoration: none;
+}
+
+a.header_menu_elt:hover{
+    color: white;
+    background-color: #20a2c5;
+}
+
+/* ------ Page ------*/
+
+div#page_content {
+    display:  flex;
+    min-height: 65vh;
+}
+
+.authorComment {
+    width: 15vw;
+    text-align: justify;
+    margin-left: 0; 
+    background-color: rgba(32, 162, 197, 0.2);
+}
+
+.authorComment img{
+    max-height: 13rem;
+    max-width: 13rem; 
+}
+
+div.content{
+    width: 85vw;
+}
+
+/* ------ Featured Posts ------*/
+
+div.featured_post{
+    border: 2px solid #20a2c5;
+    border-radius: 5px;
+}
+
+/* ------ Footer ------*/
+
+footer{
+    display: flex; 
+    background-color: #20a2c5;
+}
